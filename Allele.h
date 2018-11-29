@@ -1,5 +1,5 @@
 #include <iostream>
-    
+#include <fstream>
 	using namespace std;
 
 	class Allele{
@@ -12,14 +12,28 @@
 		Allele();
 		Allele(string,string,string);
 
-		void writeToFile(ofstream& of);
-		void setNucleotideSequence();
-		void setVariantName();
-		void setVariantType();
-		void getNucleotideSequence();
-		void getVariantName();
-		void getVariantType();
+		void WriteAlleleToFile(ofstream& of);
+		
+		void setNucleotideSequence(string givenSequence){
+			nucleotideSequence = givenSequence;
+		}
+		void setVariantName(string givenVariantName){
+			variantName = givenVariantName;
+		}
+		void setVariantType(string givenVariantType){
+			variantType = givenVariantType;
+		}
+		string getNucleotideSequence(){
+			return nucleotideSequence;
+		}
+		string getVariantName(){
+			return variantName;
+		}
+		string getVariantType(){
+			return variantType;
+		}
 
 		bool RunUnitTest();
+		
 		
 	};

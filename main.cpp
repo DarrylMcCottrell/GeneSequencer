@@ -1,5 +1,5 @@
-/*	Project:    NAME OF PROJECT GOES HERE
-	Name:       YOUR NAME GOES HERE
+/*	Project:    Program #5 GeneSequencer
+	Name:       Darryl McCottrell
     Partner:    PARTNER'S NAME IF ANY
     Class:      example: CSC 1810 - Section 1
 */
@@ -23,7 +23,26 @@ void Menu()
 
 		cout << "Please enter your choice(1 - 6)" << endl;
 		cin >> choices;
-	}
+
+		if(choices == "1"){
+
+		}
+		else if (choices == "2"){
+
+		}
+		else if(choices == "3"){
+
+		}
+		else if(choices == "4"){
+
+		}
+		else if(choices == "5"){
+
+		}
+		else if(choices == "6"){
+			cout << "Thank you, Goodbye" << endl;
+		}
+	};
 }
 int main(int argc, char *argv[])
 {
