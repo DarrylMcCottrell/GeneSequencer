@@ -12,6 +12,7 @@
 		  cin >> Chromname;
 		  cout << "What is the Chromosome gene count? ";
 		  cin >> geneCount;
+		  return c;
 		};
 		Chromosome GeneSequencer::ImportChromosome(const string& fileName = ""){
 				ifstream file;
@@ -42,4 +43,7 @@
 			c.AnalyzeGenotype();
 		}
 
-		bool GeneSequencer::PowerOnSelfTest(){}
+
+		bool GeneSequencer::PowerOnSelfTest(){
+			return true;
+		}

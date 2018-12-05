@@ -44,7 +44,10 @@ Allele Gene::getAlleleA(){
 Allele Gene::getAlleleB(){
 			return AlleleB;
 		}		
-Allele Gene::GetExpressedTrait(){}
+Allele Gene::GetExpressedTrait(){
+	Allele a;
+	return a;
+}
 
 bool Gene::RunUnitTest(){
 	Gene testData;
@@ -59,5 +62,5 @@ bool Gene::RunUnitTest(){
 	if(testData.getTraitType() == "traitType"){
 		cout << "Passed set/get trait type" << endl;
 	}
-
+	return true;
 }

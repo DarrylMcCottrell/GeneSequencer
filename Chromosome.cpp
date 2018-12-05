@@ -95,11 +95,13 @@
 			ifs >> AlleleBname;
 			ifs >> AlleleBseq;
 			
+			Gene g;
 			terms.setName(GeneName);
 			terms.setTraitType(GeneTT);
 			terms.setAlleleA(Allele(AlleleAseq,AlleleAname,AlleleAtype));
 			terms.setAlleleB(Allele(AlleleBseq,AlleleBname,AlleleBtype));
-
+			terms = Gene(terms.getAlleleA(),terms.getAlleleB());
+			AddGene(g);
 	}
 			
 			

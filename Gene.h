@@ -1,6 +1,8 @@
+#pragma once
 #include <iostream>
 #include "Allele.h"
 #include <fstream>
+
 
 
 	using namespace std;

@@ -71,7 +71,7 @@ using namespace std;
 		if(testdata.getVariantType() == "type"){
 			cout << "Passed set/get variant type" << endl;
 		}
-		testdata.WriteAlleleToFile("of");
-		
+
+		return true;
 	
 	}

@@ -1,7 +1,9 @@
+  #pragma once
  #include <iostream>
  #include "Gene.h"
  #include <vector>
  #include <fstream>
+
 
 	using namespace std;
 
