@@ -1,6 +1,7 @@
 #include <iostream>
-#include <Allele.h>
+#include "Allele.h"
 #include <fstream>
+
 
 	using namespace std;
 
@@ -15,31 +16,15 @@
 		Gene();
 		Gene(Allele,Allele);
 
-		void setName(string givenName){
-			name = givenName;
-		}
-		void setTraitType(string givenTrait){
-			traitType = givenTrait;
-		}
-		void setAlleleA(Allele givenAlleleA){
-			AlleleA = givenAlleleA;
-		}
-		void setAlleleB(Allele givenAlleleB){
-			AlleleB = givenAlleleB;
-		}
-		string getName(){
-			return name;
-		}
-		string getTraitType(){
-			return traitType;
-		}
-		Allele getAlleleA(){
-			return AlleleA;
-		}
-		Allele getAlleleB(){
-			return AlleleB;
-		}
-
+		void setName(string givenName);
+		void setTraitType(string givenTrait);
+		void setAlleleA(Allele givenAlleleA);
+		void setAlleleB(Allele givenAlleleB);
+		string getName();
+		string getTraitType();
+		Allele getAlleleA();
+		Allele getAlleleB();
+     
 		void WriteToFile(ofstream& of);
 		Allele GetExpressedTrait();
 

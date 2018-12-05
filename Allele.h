@@ -1,38 +1,29 @@
+#pragma once
 #include <iostream>
-#include <fstream>
+
+
 	using namespace std;
 
+	// setting my class Allele and it's public and private functions below
 	class Allele{
 		private:
 		string nucleotideSequence;
-		string variantName;
+		string variantName;				
 		string variantType;
-
+						
 		public:
 		Allele();
-		Allele(string,string,string);
-
-		void WriteAlleleToFile(ofstream& of);
+		Allele(string seq,string name,string type);
 		
-		void setNucleotideSequence(string givenSequence){
-			nucleotideSequence = givenSequence;
-		}
-		void setVariantName(string givenVariantName){
-			variantName = givenVariantName;
-		}
-		void setVariantType(string givenVariantType){
-			variantType = givenVariantType;
-		}
-		string getNucleotideSequence(){
-			return nucleotideSequence;
-		}
-		string getVariantName(){
-			return variantName;
-		}
-		string getVariantType(){
-			return variantType;
-		}
-
+		// Basically setting all of my needed functions in my h file so the data can then be pulled from my cpp file
+		void WriteAlleleToFile(ofstream& of);
+		void setNucleotideSequence(string givenSequence);
+		void setVariantName(string givenVariantName);
+		void setVariantType(string givenVariantType);
+		string getNucleotideSequence();
+		string getVariantName();
+		string getVariantType(); 
+		bool operator==(Allele giggity);
 		bool RunUnitTest();
 		
 		
