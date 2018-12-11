@@ -3,7 +3,6 @@
     Partner:    PARTNER'S NAME IF ANY
     Class:      example: CSC 1810 - Section 1
 */
-
 #include <iostream>
 #include <vector>
 #include "Allele.h"
@@ -15,7 +14,7 @@
 using namespace std;
 void Menu()
 {
-	string Chromosome;
+	
 	string choices;
 	GeneSequencer gs;
 	vector<Chromosome> gigg;
